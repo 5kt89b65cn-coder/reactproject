@@ -11,12 +11,14 @@
 
 # 구현할 핵심 기능
 
-- CRUD:생성/조회/수정/삭제 전부 구현
+- CRUD
 - SPA(router)
-- 가상 스크롤: 데이터의 효율화 처리
-- 코드스플리팅: lazy+ Suspense 처리하기
-- 외부데이터 연동: 외부데이터 이름
-- 반응형웹(PC, 태블릿 or 모바일)
+- React.Memo를 통한 최적화
+- Redux
+- 무한스크롤
+- lazy, Suspense 처리하기
+- 외부데이터 연동 (더미데이터 및 카카오 api 이용)
+- 반응형웹 (pc, 모바일)
 
 # 각자 맡은 역할
 
@@ -32,13 +34,17 @@
 
 ![mainpage flow](images/mp.png)
 
+### gif(pc)
+
+![mainpage_pc](images/main_p1.gif)
+
 ### 스크린샷(pc)
 
-![mainpage flow](images/main.png)
+![mainpage_pc](images/main.png)
 
 ### 스크린샷(mobile)
 
-![mainpage flow](images/main_m.png)
+![mainpage_mobile](images/main_m.png)
 
 ## 랜덤메뉴 후기 등록 및 편의점 안내
 
@@ -48,22 +54,64 @@
 
 ### gif(pc)
 
-![mainpage flow](images/rv.gif)
+![review_pc](images/rv.gif)
 
 ### 스크린샷(mobile)
 
-![mainpage flow](images/rv_m.png)
+![review_mobile](images/rv_m.png)
 
 ## 게시판
 
 ### flow
 
-![게시판](images/notice.png)
+![notice flow](images/notice.png)
 
 ### gif(pc)
 
-![mainpage flow](images/notice_p.gif)
+![notice_pc](images/notice_p.gif)
 
 ### 스크린샷(mobile)
 
-![mainpage flow](images/notice_m.png)
+![notice_mobile](images/notice_m.png)
+
+## 게시판
+
+### flow
+
+![mypage flow](images/my.png)
+
+### gif(pc)
+
+![mypage_pc](images/my_p.gif)
+
+### 스크린샷(mobile)
+
+![mypage_mobile](images/my_m.png)
+
+## redux
+
+### flow
+
+![redux flow](images/redux.png)
+
+## 라이브러리 & API
+
+### 라이브러리
+
+    "axios": "^1.12.2",
+    "classnames": "^2.5.1",
+
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.4",
+
+    "react-virtualized": "^9.22.6",
+    "redux": "^5.0.1",
+    "redux-devtools-extension": "^2.13.9",
+    "sass": "^1.93.2",
+    "styled-components": "^6.1.19",
+    "web-vitals": "^2.1.0"
+
+### API
+
+kakaomap
