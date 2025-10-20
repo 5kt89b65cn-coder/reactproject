@@ -39,3 +39,31 @@
 ### 스크린샷(mobile)
 
 ![mainpage flow](images/main_m.png)
+
+## 랜덤메뉴 후기 등록 및 편의점 안내
+
+### flow
+
+![랜덤메뉴 후기&편의점](images/rv.png)
+
+### gif(pc)
+
+![mainpage flow](images/rv.gif)
+
+### 스크린샷(mobile)
+
+![mainpage flow](images/rv_m.png)
+
+## 게시판
+
+### flow
+
+![게시판](images/notice.png)
+
+### gif(pc)
+
+![mainpage flow](images/notice_p.gif)
+
+### 스크린샷(mobile)
+
+![mainpage flow](images/notice_m.png)
