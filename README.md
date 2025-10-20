@@ -31,4 +31,4 @@
 ### 메인페이지
 
 - flow
-  ![mainpage flow](images/my.png)
+  ![mainpage flow](images/mp.png)
