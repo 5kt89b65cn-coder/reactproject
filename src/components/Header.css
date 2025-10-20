@@ -1,0 +1,22 @@
+.header {
+  background-color: #141414;
+}
+
+.title {
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-link {
+  margin: 0 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}

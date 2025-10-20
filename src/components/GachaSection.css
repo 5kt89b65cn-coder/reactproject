@@ -1,0 +1,110 @@
+.gacha-container {
+  text-align: center;
+}
+
+.start-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #424140;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 480px;
+}
+
+.result-box {
+  width: 800px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #222222;
+  color: #ffffff;
+  position: relative;
+}
+
+.items-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+/* 라면 이미지 + 이름 */
+.ramen-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ramen-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ramen-name {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* 토핑 이미지들 가로로 */
+.topping-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topping-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topping-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.topping-item strong {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.total-price {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* 링크 박스 */
+.result-links {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.link-box {
+  background-color: #43a047;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.link-box:hover {
+  background-color: #388e3c;
+}

@@ -1,0 +1,230 @@
+.my-page {
+  background-color: #111111ff; /* 검은색 배경 */
+  color: #fff; /* 글자색은 흰색으로 바꿔야 글자가 보임 */
+  min-height: 100vh; /* 화면 전체 높이 채우기 */
+}
+
+/* 즐겨찾기 메뉴 컨테이너 */
+.favorite-menus-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+/* 즐겨찾기 메뉴 개별 박스 - Reviews.scss의 preview-container 참고 */
+.favorite-menus-container .preview-container {
+  flex: 1 1 700px; /* 최소 250px 너비, 공간 따라 유동적 */
+  border: 2px solid #444444;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #222222;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: #eee;
+  gap: 12px;
+}
+
+.favorite-menus-container .preview-container p.total-price {
+  margin-left: auto; /* 왼쪽 마진 자동으로 채워서 오른쪽 끝으로 밀기 */
+  font-weight: bold;
+  color: #eee;
+  align-self: flex-end; /* 세로 정렬이 필요하면 */
+}
+
+/* 즐겨찾기 메뉴 라면 이미지 */
+.favorite-menus-container .preview-container .ramen-image {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* 토핑 박스 */
+.favorite-menus-container .preview-container .toppings {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 12px;
+}
+
+/* 개별 토핑 아이템 */
+.favorite-menus-container .preview-container .topping-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  font-size: 13px;
+}
+
+/* 토핑 이미지 */
+.favorite-menus-container .preview-container .topping-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  margin-bottom: 4px;
+}
+
+/* 총 가격 */
+.favorite-menus-container .preview-container p:last-child {
+  font-weight: bold;
+  color: #eee;
+}
+
+.favorite-heart {
+  display: inline-block;
+  margin-top: 8px;
+  color: #e53935; /* 붉은색 */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 내가 쓴 후기 박스 */
+.my-reviews {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+/* 후기 개별 박스 */
+.review-box {
+  position: relative;
+  border: 2px solid #444444;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background-color: #222222;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  gap: 12px;
+}
+
+/* 후기 라면 이미지 */
+.review-box .ramen-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  align-self: center;
+}
+
+/* 후기 제목 */
+.review-box h4 {
+  margin: 8px 0;
+  font-size: 20px;
+  color: #eee;
+}
+
+/* 토핑 이미지 */
+.review-box .toppings {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-box .topping-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* 후기 텍스트 */
+.review-box p {
+  margin-bottom: 12px;
+  color: #eee;
+  white-space: pre-wrap; /* 줄바꿈 유지 */
+}
+
+/* 즐겨찾기 하트 */
+.review-box span {
+  color: #e53935;
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+/* 수정, 삭제 버튼 */
+.review-actions {
+  position: absolute;
+  bottom: 12px; /* 후기 박스 아래쪽에서 12px 위로 */
+  right: 12px; /* 후기 박스 오른쪽에서 12px 안쪽으로 */
+  display: flex;
+  gap: 12px;
+}
+
+.review-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-weight: 600;
+}
+
+.review-actions button:hover {
+  background-color: #43a047;
+}
+
+/* textarea 수정 폼 */
+.review-box textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.review-box textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+}
+
+.heart-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+  transition: transform 0.2s ease;
+}
+
+.heart-button:hover {
+  transform: scale(1.2);
+}
+
+.review-box .heart-button {
+  color: #aaa;
+}
+
+.review-box .heart-button.liked {
+  color: #e53935;
+}
+
+.preview-container .heart-button {
+  color: #e53935;
+}

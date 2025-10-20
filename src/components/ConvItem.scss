@@ -1,0 +1,28 @@
+.conv-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.conv-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.conv-item p {
+  margin: 8px 0;
+}
+
+.conv-item a {
+  color: #0077cc;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.conv-item a:hover {
+  text-decoration: underline;
+}

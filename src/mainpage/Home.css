@@ -1,0 +1,7 @@
+.rp {
+  background-color: black;
+  height: 100vh;
+  background-image: url("../images/라면이미지.png");
+  background-repeat: no-repeat; /* 반복 안 함 */
+  background-position: center 65%;
+}

@@ -1,0 +1,33 @@
+/* 헤더가 화면 전체를 기준으로 잡도록 */
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+  gap: 24px; /* 타이틀-네브 간격 */
+  padding: 20px 0;
+  background: #252427;
+}
+.nav {
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+/* nav가 부모(.header) 기준 100% 차지 */
+.header .nav {
+  display: flex;
+  width: 100%; /* ← 여기! */
+  max-width: 900px; /* 중앙에 적당한 폭 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 모바일에서 세로 스택 + 전체폭 */
+@media (max-width: 600px) {
+  .header .nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
