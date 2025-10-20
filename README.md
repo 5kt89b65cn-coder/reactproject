@@ -22,9 +22,9 @@
 
 # 각자 맡은 역할
 
-전하성 - 더미데이터, 게시판(CRUD)_ 무한스크롤
-윤요엘 - 전체적인 ui(SPA_ lazy, Suspense), 마이페이지
-김민식 - API기능, 편의점안내 화면
+- 전하성 - 더미데이터, 게시판(CRUD)\_ 무한스크롤
+- 윤요엘 - 전체적인 ui(SPA\_ lazy, Suspense), 마이페이지
+- 김민식 - API기능, 편의점안내 화면
 
 # flow + UI(gif 파일이면 더 좋음)
 
@@ -74,7 +74,7 @@
 
 ![notice_mobile](images/notice_m.png)
 
-## 게시판
+## 마이페이지
 
 ### flow
 
