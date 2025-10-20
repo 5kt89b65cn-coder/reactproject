@@ -26,9 +26,16 @@
 
 # flow + UI(gif 파일이면 더 좋음)
 
-## flow
+## 메인페이지
 
-### 메인페이지
+### flow
 
-- flow
-  ![mainpage flow](images/mp.png)
+![mainpage flow](images/mp.png)
+
+### 스크린샷(pc)
+
+![mainpage flow](images/main.png)
+
+### 스크린샷(mobile)
+
+![mainpage flow](images/main_m.png)
